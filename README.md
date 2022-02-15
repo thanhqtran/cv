@@ -2,13 +2,4 @@
 
 This is the LaTeX sources for my academic CV.
 
-View the latest version here [thanhqtran_cv.pdf](https://github.com/thanhqtran/cv/blob/059b62b6dd9fc4c4f3a9fab12cbffbf503c59bf8/thanhqtran_cv.pdf)
-
-## Template
-
-The original file was obtained from a git by [Mohammad Abdullah Al Mamun
-](https://github.com/Mamunia/cv) in order to update publications from your own .bib file.
-
-I combined it with some features from [Paciorek](https://www.stat.berkeley.edu/~paciorek/computingTips/Latex_template_creating_CV_.html)'s res template.
-
-Feel free to use and modify it yourself.
+Modified from: [duetosymmetry_cv](https://github.com/duetosymmetry/cv)

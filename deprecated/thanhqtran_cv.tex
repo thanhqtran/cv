@@ -1,0 +1,192 @@
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+	colorlinks,
+	linkcolor={red!50!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black}
+}
+\usepackage{fancyhdr}
+\usepackage{multibib}
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+%\fancyfoot{} %when no page numbering needed
+%\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-10pt}\scshape\raggedright\large\color{black}
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Custom commands
+\renewcommand{\labelitemii}{$\circ$}
+% use Japanese fonts
+\usepackage[T1]{fontenc}
+\usepackage{CJKutf8}
+\usepackage[japanese]{babel}
+\newcommand\textjp[1]{%
+	\begin{CJK}{UTF8}{min}#1\end{CJK}}
+
+%-----------------------------
+%%%%%%  CV CONTENT FROM HERE  %%%%%%
+
+\begin{document}
+	
+	%----------HEADING-----------------
+	
+	\begin{center}
+		\textbf{{\LARGE \color{black} TRAN Quang Thanh}}
+	\end{center}
+	
+	\hrulefill
+	\vspace{2pt}
+	
+	\begin{tabular}{@{}p{4in}p{4in}}
+		41 Kawauchi Aoba-ku                          & {\it Tel:}  (81) 90-3593-2794                                                                              \\            
+		Graduate School of Economics and Management  & {\it Email:}  \href{mailto:tranquangthanh.ftu@gmail.com}{tranquangthanh.ftu@gmail.com}                     \\         
+		Tohoku University                            & {\it Affiliation:}  \href{mailto:tran.quang.thanh.p1@dc.tohoku.ac.jp}{tran.quang.thanh.p1@dc.tohoku.ac.jp} \\       
+		Sendai, Miyagi Japan \textjp{〒　980-8576} & {\it Github:} \href{https://github.com/thanhqtran}{https://github.com/thanhqtran}                          \\     
+	\end{tabular}
+	
+	\vspace{4pt}
+	%\hrulefill
+	
+	
+	%-----------EDUCATION-----------------
+	\section{Education}
+	\begin{minipage}{.7\linewidth} \begin{flushleft}
+			\textbf{Tohoku University}, Miyagi, Japan \\
+			\hspace{4mm} Ph.D. Student in Macroeconomics (GPEM), expected graduation: Nov. 2024
+	\end{flushleft} \end{minipage}
+	\hfill 
+	\begin{minipage}{.25\linewidth}\begin{flushright}
+			Oct. 2021 - present \\
+			
+	\end{flushright}\end{minipage}
+	
+	\vspace{2pt}
+	\hspace{4mm} Dissertation Topic:  ``Automation, Fertility and Growth in an Overlapping Generations Model'' \\
+	\hspace{4mm} Advisor:  Kitagawa Akiomi
+	\vspace{2pt}
+	
+	\begin{minipage}{.7\linewidth} \begin{flushleft}
+			\textbf{Tohoku University}, Miyagi, Japan \\
+			\hspace{4mm} M.Sc. in Economics (GPEM)\\
+	\end{flushleft} \end{minipage}
+	\hfill 
+	\begin{minipage}{.25\linewidth}\begin{flushright}
+			Oct. 2019 - Sep. 2021 \\
+	\end{flushright}\end{minipage}
+	
+	\vspace{2pt}
+	\hspace{4mm} Thesis: ``The Impacts of Population Aging on Economic Growth: An Application of the OLG Model'' \\
+	\hspace{4mm} Advisor: Akita Jiro
+	\vspace{4pt}
+	
+	\begin{minipage}{.7\linewidth} \begin{flushleft}
+			\textbf{Foreign Trade University}, Hanoi, Vietnam \\
+			\hspace{4mm} B.A. in International Economics
+	\end{flushleft} \end{minipage}
+	\hfill 
+	\begin{minipage}{.25\linewidth}\begin{flushright}
+			Sep. 2013 - Mar. 2019 [*] \\
+	\end{flushright}\end{minipage}
+	
+	\vspace{2pt}
+	\hspace{4mm} [*] Exchange student with Tohoku University during Oct. 2015 - Nov. 2016
+	\vspace{4pt}
+	
+	%-----------Research Interests-----------------	    
+	\section{Research Interests}
+	\begin{description}
+		\item Macroeconomics, economic growth, overlapping generations model, dynamic general equilibrium model \\
+		\vspace{-5pt}
+		\item Data science, physical simulation of economic models
+	\end{description}
+	\vspace{0pt}
+	%-----------Awards-----------------
+
+	\section{Awards and Scholarships}
+	\begin{description}
+		\item JST's Support for Pioneering Research Initiated by the Next Generation (\textjp{次世代研究者挑戦的研究}) Program, 2021
+		\vspace*{-7pt}
+		\item MEXT Honor Scholarship, 2020
+		\vspace*{-7pt}
+		\item Japanese Government's JASSO Scholarship, 2019
+		\vspace*{-7pt}
+		\item Foreign Trade University's Encouragement Scholarship for outstanding academic results, 2017
+	\end{description}
+	
+	\vspace{4pt}
+	
+	%-----------Research Experience-----------------
+	\vspace{-5pt}
+	\section{Academic Experience}
+	
+	\textbf{Tohoku University}, Sendai, Miyagi, Japan
+	
+	\hspace{4mm} \textit{Teaching Assistant} \hfill {Mar. 2021 - present}\\
+	\hspace{4mm} Responsibility for grading, computational codes checking, lecture feedback of English-taught graduate level courses offered by the Graduate School of Economics and Management's GPEM program. Courses assisted:
+	\vspace*{-7pt}
+	\hspace{6mm} \begin{itemize}
+		\item 21 Spr.Microeconomics, Spring 2021. Professor: Dai Zusai
+		\vspace*{-7pt}
+		\item 21 Spr. Computational Modeling and Simulation in Games, Spring 2021. Professor: Dai Zusai
+		\vspace*{-7pt}
+		\item 21 Fall Microeconomics, Fall 2021. Professor: Dai Zusai
+	\end{itemize}
+	
+	\textbf{IMF Regional Office for Asia and the Pacific }, Tokyo, Japan
+	
+	\hspace{4mm} \textit{Macroeconomist Training Program} \hfill {January 2020} \\
+	\hspace{4mm} Learning IMF's macroeconomic analysis techniques with practical application.
+	\vspace{4pt}
+	
+	
+	%-----------Technical Skills-----------------
+	%\vspace{-5pt}
+	\section{Technical Skills}
+	\begin{description}
+		\item Programming: Python, R, MATLAB
+		\vspace*{-7pt}
+		\item Processor: \LaTeX, Word, Excel, Powerpoint
+		\vspace*{-7pt}
+		\item Languages (in order of fluency): Vietnamese, English, Japanese
+	\end{description}
+	\vspace{4pt}
+	
+	%-----------Publications-----------------
+	\vspace{-5pt}
+	\section{Publications}
+	\nocite{*}
+	\bibliographystyle{unsrt}
+	\bibliography{thanhqtran_ref}    % <- change the name of for your own BibTeX file
+	
+\end{document}
+

@@ -1,51 +1,43 @@
-\documentclass[a4paper,20pt]{article}
-
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{xcolor}
-\hypersetup{
-	colorlinks,
-	linkcolor={red!50!black},
-	citecolor={blue!50!black},
-	urlcolor={blue!80!black}
-}
+%Source: https://github.com/duetosymmetry/cv
+\let\nofiles\relax % This is because res says to not emit aux files,
+                   % but lastpage needs aux files.
+\documentclass[margin,line]{res}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{lastpage}
 \usepackage{fancyhdr}
+\usepackage{etaremune}
+\usepackage[normalem]{ulem}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\voffset -25pt
+%\topmargin -.2in
+\headsep 25pt
+\textwidth=6.0in
+\textheight=9.2in
+\itemsep=0in
+\parsep=0in
+
+% Headings
+\pagestyle{fancy}
+\lhead{TRAN Quang-Thanh --- Curriculum Vitae}
+\chead{}
+\rhead{\thepage\ of \pageref*{LastPage}}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+
+%Bib management
 \usepackage{multibib}
 \usepackage{etoolbox}
 \patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
 
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-%\fancyfoot{} %when no page numbering needed
-%\fancyfoot[C]{\thepage}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.530in}
-\addtolength{\evensidemargin}{-0.375in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.45in}
-\addtolength{\textheight}{1in}
-
-\urlstyle{rm}
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Sections formatting
-\titleformat{\section}{
-	\vspace{-10pt}\scshape\raggedright\large\color{black}
-}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
-
-% Custom commands
-\renewcommand{\labelitemii}{$\circ$}
 % use Japanese fonts
 \usepackage[T1]{fontenc}
 \usepackage{CJKutf8}
@@ -53,140 +45,165 @@
 \newcommand\textjp[1]{%
 	\begin{CJK}{UTF8}{min}#1\end{CJK}}
 
-%-----------------------------
-%%%%%%  CV CONTENT FROM HERE  %%%%%%
 
 \begin{document}
-	
-	%----------HEADING-----------------
-	
-	\begin{center}
-		\textbf{{\LARGE \color{black} TRAN Quang Thanh}}
-	\end{center}
-	
-	\hrulefill
-	\vspace{2pt}
-	
-	\begin{tabular}{@{}p{4in}p{4in}}
-		41 Kawauchi Aoba-ku                          & {\it Tel:}  (81) 90-3593-2794                                                                              \\            
-		Graduate School of Economics and Management  & {\it Email:}  \href{mailto:tranquangthanh.ftu@gmail.com}{tranquangthanh.ftu@gmail.com}                     \\         
-		Tohoku University                            & {\it Affiliation:}  \href{mailto:tran.quang.thanh.p1@dc.tohoku.ac.jp}{tran.quang.thanh.p1@dc.tohoku.ac.jp} \\       
-		Sendai, Miyagi Japan \textjp{〒　980-8576} & {\it Github:} \href{https://github.com/thanhqtran}{https://github.com/thanhqtran}                          \\     
-	\end{tabular}
-	
-	\vspace{4pt}
-	%\hrulefill
-	
-	
-	%-----------EDUCATION-----------------
-	\section{Education}
-	\begin{minipage}{.7\linewidth} \begin{flushleft}
-			\textbf{Tohoku University}, Miyagi, Japan \\
-			\hspace{4mm} Ph.D. Student in Macroeconomics (GPEM), expected graduation: Nov. 2024
-	\end{flushleft} \end{minipage}
-	\hfill 
-	\begin{minipage}{.25\linewidth}\begin{flushright}
-			Oct. 2021 - present \\
-			
-	\end{flushright}\end{minipage}
-	
-	\vspace{2pt}
-	\hspace{4mm} Dissertation Topic:  ``Automation, Fertility and Growth in an Overlapping Generations Model'' \\
-	\hspace{4mm} Advisor:  Kitagawa Akiomi
-	\vspace{2pt}
-	
-	\begin{minipage}{.7\linewidth} \begin{flushleft}
-			\textbf{Tohoku University}, Miyagi, Japan \\
-			\hspace{4mm} M.Sc. in Economics (GPEM)\\
-	\end{flushleft} \end{minipage}
-	\hfill 
-	\begin{minipage}{.25\linewidth}\begin{flushright}
-			Oct. 2019 - Sep. 2021 \\
-	\end{flushright}\end{minipage}
-	
-	\vspace{2pt}
-	\hspace{4mm} Thesis: ``The Impacts of Population Aging on Economic Growth: An Application of the OLG Model'' \\
-	\hspace{4mm} Advisor: Akita Jiro
-	\vspace{4pt}
-	
-	\begin{minipage}{.7\linewidth} \begin{flushleft}
-			\textbf{Foreign Trade University}, Hanoi, Vietnam \\
-			\hspace{4mm} B.A. in International Economics
-	\end{flushleft} \end{minipage}
-	\hfill 
-	\begin{minipage}{.25\linewidth}\begin{flushright}
-			Sep. 2013 - Mar. 2019 [*] \\
-	\end{flushright}\end{minipage}
-	
-	\vspace{2pt}
-	\hspace{4mm} [*] Exchange student with Tohoku University during Oct. 2015 - Nov. 2016
-	\vspace{4pt}
-	
-	%-----------Research Interests-----------------	    
-	\section{Research Interests}
-	\begin{description}
-		\item Macroeconomics, economic growth, overlapping generations model, dynamic general equilibrium model \\
-		\vspace{-5pt}
-		\item Data science, physical simulation of economic models
-	\end{description}
-	\vspace{0pt}
-	%-----------Awards-----------------
 
-	\section{Awards and Scholarships}
-	\begin{description}
-		\item JST's Support for Pioneering Research Initiated by the Next Generation (\textjp{次世代研究者挑戦的研究}) Program, 2021
-		\vspace*{-7pt}
-		\item MEXT Honor Scholarship, 2020
-		\vspace*{-7pt}
-		\item Japanese Government's JASSO Scholarship, 2019
-		\vspace*{-7pt}
-		\item Foreign Trade University's Encouragement Scholarship for outstanding academic results, 2017
-	\end{description}
-	
-	\vspace{4pt}
-	
-	%-----------Research Experience-----------------
-	\vspace{-5pt}
-	\section{Academic Experience}
-	
-	\textbf{Tohoku University}, Sendai, Miyagi, Japan
-	
-	\hspace{4mm} \textit{Teaching Assistant} \hfill {Mar. 2021 - present}\\
-	\hspace{4mm} Responsibility for grading, computational codes checking, lecture feedback of English-taught graduate level courses offered by the Graduate School of Economics and Management's GPEM program. Courses assisted:
-	\vspace*{-7pt}
-	\hspace{6mm} \begin{itemize}
-		\item 21 Spr.Microeconomics, Spring 2021. Professor: Dai Zusai
-		\vspace*{-7pt}
-		\item 21 Spr. Computational Modeling and Simulation in Games, Spring 2021. Professor: Dai Zusai
-		\vspace*{-7pt}
-		\item 21 Fall Microeconomics, Fall 2021. Professor: Dai Zusai
-	\end{itemize}
-	
-	\textbf{IMF Regional Office for Asia and the Pacific }, Tokyo, Japan
-	
-	\hspace{4mm} \textit{Macroeconomist Training Program} \hfill {January 2020} \\
-	\hspace{4mm} Learning IMF's macroeconomic analysis techniques with practical application.
-	\vspace{4pt}
-	
-	
-	%-----------Technical Skills-----------------
-	%\vspace{-5pt}
-	\section{Technical Skills}
-	\begin{description}
-		\item Programming: Python, R, MATLAB
-		\vspace*{-7pt}
-		\item Processor: \LaTeX, Word, Excel, Powerpoint
-		\vspace*{-7pt}
-		\item Languages (in order of fluency): Vietnamese, English, Japanese
-	\end{description}
-	\vspace{4pt}
-	
-	%-----------Publications-----------------
-	\vspace{-5pt}
-	\section{Publications}
-	\nocite{*}
-	\bibliographystyle{unsrt}
-	\bibliography{thanhqtran_ref}    % <- change the name of for your own BibTeX file
-	
+\newcommand{\myname}{TRAN Quang-Thanh}
+\newlength{\mynamewidth}
+\settowidth{\mynamewidth}{\namefont\myname}
+
+\name{\hspace*{0.5\textwidth}\hspace{-0.5\mynamewidth} \myname \vspace*{.1in}}
+% On the first page, have no header.
+\thispagestyle{empty}
+
+\begin{resume}
+
+\input{contact.tex}
+
+% \section{\sc Citizenship}
+% United States
+
+\section{\sc Education}
+{\bf Ph.D. Candidate, Economics,} Tohoku University, Japan \hfill {\bf current}\\
+\vspace*{-.1in}
+\begin{itemize}
+\item[ ] Dissertation Advisor: Prof.\ KITAGAWA Akiomi
+%\item[ ] Dissertation Title: {\it Probes of strong-field gravity}
+%\item[ ] G.P.A.: 4.6/5.0
+\end{itemize}
+
+{\bf M.Sc., Economics,} Tohoku University, Japan \hfill {\bf September 2021}\\
+\vspace*{-.1in}
+\begin{itemize}
+	\item[ ] Dissertation Advisor: Prof.\ AKITA Jiro
+	%\item[ ] Dissertation Title: {\it Probes of strong-field gravity}
+	%\item[ ] G.P.A.: 4.6/5.0
+\end{itemize}
+
+{\bf B.S., International Economics,} Foreign Trade University (FTU), Vietnam \hfill {\bf March 2019}\\
+\vspace*{-.1in}
+\begin{itemize}
+%\item[ ] Degree conferred with honor.
+\item[ ] Thesis Advisor: Dr.\ NGUYEN Thi-Hong
+%\item[ ] G.P.A.: ?.??/4.00
+\end{itemize}
+
+%\section{\sc Employment}
+%{\bf Assistant Professor,} University of Mississippi, Oxford, MS USA
+%\hfill {\bf August 2018--Present}\\
+%\\
+%% Added to improve page breaks
+%\vspace{-1em}
+
+\section{\sc Research Interests}
+	Macroeconomics, economic growth, overlapping generations model, dynamic general equilibrium model. Agent-based simulation, physical simulation of economic models.
+
+\section{\sc Honors and Awards}
+{\bf Pioneering Research Initiated by the Next Generation Program,} JST \hfill {\bf 2021--2024}\\
+\\
+{\bf MEXT Honor Scholarship,} MEXT \hfill {\bf 2020}\\
+\\
+{\bf Japanese Government's JASSO Scholarship,} JASSO \hfill {\bf 2019}\\
+\\
+{\bf Encouragement Scholarship for Outstanding Academic Results,} FTU \hfill {\bf 2017}\\
+
+% Added to improve page breaks
+\vspace{-1em}
+
+\section{\sc Academic Experience}
+{\bf Teaching Assistant}, Tohoku University
+\vspace*{.05in}
+\begin{itemize}
+\item[ ] Microeconomics II. Professor: Dai Zusai \hfill {\bf Fall 2021}
+\item[ ] Microeconomics I. Professor: Dai Zusai \hfill {\bf Spring 2021}
+\item[ ] Computational Modeling and Simulation in Games. Professor: Dai Zusai \hfill {\bf Spring 2021}
+\end{itemize}
+
+{\bf Trainee}, IMF Regional Office for Asia and the Pacific, Tokyo
+\vspace*{.05in}
+\begin{itemize}
+\item[ ] Macroeconomist Training Program \hfill {\bf January 2020}
+\end{itemize}
+
+%\section{\sc Mentoring/
+%  Supervision}
+%{\bf Postdoctoral researchers}
+%\begin{itemize}
+%\item[] Károly Csukás
+%\hfill {\bf Fall 2021--present}
+%\item[] José Tomás Gálvez Ghersi
+%\hfill {\bf Fall 2019--present}
+%\end{itemize}
+
+\section{\sc Skills}
+{\bf Languages ---}
+\vspace*{.05in}
+Vietnamese (native), English, Japanese, French \\
+{\bf Programming ---}
+\vspace*{.05in}
+\begin{itemize}
+	\item Proficient in: Python, R, MATLAB
+	\item Markup languages: \LaTeX, HTML, Markdown.
+\end{itemize}
+Most open-source contributions can be found at \url{https://github.com/thanhqtran}
+% {\bf Operating systems---}%
+% Mac OS, Linux/*nix.
+% Twiddle this for spacing
+
+\section{\sc Membership}
+Japanese Economic Association
+
+\newpage
+
+\ifx\nopubs\undefined
+\input{publication.tex}
+\else
+%
+\fi
+
+%\input{conference.tex}
+
+%\newpage{}
+
+%\section{\sc References}
+%\vspace*{.05in}
+%\parbox{\textwidth}{%
+%{\bf KITAGAWA Akiomi} Professor of Physics, Massachusetts Institute of Technology \\
+%77 Massachusetts Avenue, Bldg.\ 37-602A \\
+%Cambridge, MA 02139 \\
+%email: \href{mailto:sahughes@mit.edu}{sahughes@mit.edu} \\
+%office phone: \href{tel:1-617-258-8523}{1-617-258-8523}}
+%\par
+%\parbox{\textwidth}{%
+%{\bf Nico~Yunes,} Professor of Physics, University of Illinois\\
+%249 Loomis Laboratory\\
+%1110 West Green Street\\
+%Urbana, IL 61801-3003\\
+%email: \href{mailto:nyunes@illinois.edu}{nyunes@illinois.edu} \\
+%office phone: \href{tel:1-814-883-2069}{1-814-883-2069}}
+%\par
+%\parbox{\textwidth}{%
+%{\bf {\'E}anna~{\'E}.~Flanagan,} Professor of Physics and Astronomy,
+%Cornell University\\
+%463 Physical Sciences Building\\
+%Ithaca, NY 14853\\
+%email: \href{mailto:eef3@cornell.edu}{eef3@cornell.edu}\\
+%office phone: \href{tel:1-607-255-6534}{1-607-255-6534}}
+%\par
+%\parbox{\textwidth}{%
+%{\bf Yanbei~Chen,} Professor of Physics,
+%California Institute of Technology\\
+%TAPIR 350-17, Caltech\\
+%1200 E.\ California Boulevard\\
+%Pasadena, CA 91125\\
+%email: \href{mailto:yanbei@caltech.edu}{yanbei@caltech.edu}
+%(please send correspondence to \href{mailto:joann@caltech.edu}{joann@caltech.edu})
+%\\
+%office phone: \href{tel:1-626-395-4258}{1-626-395-4258}}
+
+\end{resume}
 \end{document}
 
+% Local Variables:
+% mode: latex
+% End:
