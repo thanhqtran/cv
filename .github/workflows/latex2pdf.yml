@@ -1,20 +1,16 @@
-name: Build LaTeX Document
-on: [push, pull_request]
+name: Build LaTeX document
+on: [push]
 jobs:
-  test:
+  build_latex:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
-
       - name: Compile LaTeX document
-        uses: Sakul6499/GitHub-Action-LaTeX@v1.0.0
+        uses: xu-cheng/latex-action@v2
         with:
-          latex_main_file: thanhqtran_cv.tex
-
-      - name: Upload
-        uses: actions/upload-artifact@master
+          root_file: thanhqtran_cv.tex
+      - uses: actions/upload-artifact@v2
         with:
-          name: thanhqtran_cv.pdf
-          path: ./ 
-        if: always()
+          name: PDF
+          path: thanhqtrancv.pdf
