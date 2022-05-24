@@ -1,4 +1,4 @@
-name: Github Actions CI to build pdf from tex source, update everyday.
+name: Github Actions CI to build pdf from tex source, update on push.
 on: push
 jobs:
   build:
