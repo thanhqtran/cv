@@ -33,7 +33,7 @@ jobs:
           # extra_fonts: ./fonts/*.ttf
 
           # Arbitrary bash codes to be executed before compiling LaTeX documents
-          pre_compile: tlmgr update --all
+          pre_compile: sudo apt-get update && sudo apt-get install texlive texlive-publishers texlive-science latexmk cm-super
           
           # Arbitrary bash codes to be executed after compiling LaTeX documents
           post_compile: latexmk -c
