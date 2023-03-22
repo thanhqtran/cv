@@ -33,7 +33,8 @@ jobs:
           # extra_fonts: ./fonts/*.ttf
 
           # Arbitrary bash codes to be executed before compiling LaTeX documents
-          pre_compile: tlmgr update --self && tlmgr update --all
+          # pre_compile: tlmgr update --self && tlmgr update --all
+          pre_compile: docker build -t qmcgaw/latexdevcontainer --build-arg TEXLIVE_VERSION=2022 https://github.com/qdm12/latexdevcontainer.git 
 
           # Arbitrary bash codes to be executed after compiling LaTeX documents
           post_compile: latexmk -c
