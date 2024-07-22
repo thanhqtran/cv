@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.15)  4 APR 2024 17:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.3)  22 JUL 2024 16:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -363,7 +363,7 @@ Package: multibib 2008/12/10 v1.4 Multiple bibliographies for one document.
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count322
 \l__pdf_internal_box=\box57
-) (/Users/teddi/Documents/Github/cv/.texpadtmp/thanhqtran_cv.aux)
+) (/Users/teddi/Github/cv/.texpadtmp/thanhqtran_cv.aux)
 \openout1 = `thanhqtran_cv.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
@@ -407,7 +407,7 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 \everyMPtoPDFconversion=\toks38
 )) (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx))
 Package hyperref Info: Link coloring ON on input line 44.
- (/Users/teddi/Documents/Github/cv/.texpadtmp/thanhqtran_cv.out) (/Users/teddi/Documents/Github/cv/.texpadtmp/thanhqtran_cv.out)
+ (/Users/teddi/Github/cv/.texpadtmp/thanhqtran_cv.out) (/Users/teddi/Github/cv/.texpadtmp/thanhqtran_cv.out)
 \@outlinefile=\write3
 \openout3 = `thanhqtran_cv.out'.
 
@@ -452,39 +452,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--85
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--93
+Underfull \hbox (badness 10000) in paragraph at lines 89--94
 
  []
 
-(./publication.tex
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 11.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 109.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 109.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 109.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [1
+) (./publication.tex [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]) (./conference.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
@@ -497,7 +496,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 [2{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] 
 enddocument/afterlastpage: lastpage setting LastPage.
-(/Users/teddi/Documents/Github/cv/.texpadtmp/thanhqtran_cv.aux)
+(/Users/teddi/Github/cv/.texpadtmp/thanhqtran_cv.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -506,18 +505,18 @@ Package rerunfilecheck Info: File `thanhqtran_cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13976 strings out of 474116
- 222043 string characters out of 5743682
+ 13979 strings out of 474116
+ 221940 string characters out of 5743683
  1941187 words of memory out of 5000000
- 36079 multiletter control sequences out of 15000+600000
+ 36077 multiletter control sequences out of 15000+600000
  566678 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,1022b,532s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,1022b,525s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on /Users/teddi/Documents/Github/cv/.texpadtmp/thanhqtran_cv.pdf (2 pages, 125120 bytes).
+Output written on /Users/teddi/Github/cv/.texpadtmp/thanhqtran_cv.pdf (2 pages, 127797 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
+ 72 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
+ 8 named destinations out of 1000 (max. 500000)
  20993 words of extra memory for PDF output out of 24883 (max. 10000000)
 
