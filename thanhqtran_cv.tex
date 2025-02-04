@@ -1,184 +1,226 @@
-%Source: https://github.com/duetosymmetry/cv
-\let\nofiles\relax % This is because res says to not emit aux files,
-                   % but lastpage needs aux files.
-\documentclass[margin,line]{res}
-\usepackage[colorlinks=true]{hyperref}
+% LaTeX template for (Academic) CV.
+% The template consists only of this file.
+% Document is to be structured as a normal article.
+% Created in 2017 by Pedro Tiago Martins (ptmartins.info).
+% Dedicated to the public domain.
+% Source: https://github.com/ptsgmartins/cv-LaTeX-template
+
+\documentclass[12pt]{article}
+\usepackage{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{microtype}
-\usepackage{amsmath,amssymb}
-\usepackage{lastpage}
-\usepackage{fancyhdr}
-\usepackage{etaremune}
-\usepackage[normalem]{ulem}
-\usepackage{datetime}
-\usepackage[english]{babel}
-
-\oddsidemargin -.5in
-\evensidemargin -.5in
-\voffset -25pt
-%\topmargin -.2in
-\headsep 25pt
-\textwidth=6.0in
-\textheight=9.2in
-\itemsep=0in
-\parsep=0in
-
-% Headings
+\usepackage{libertine} %font
+\usepackage[margin=2cm]{geometry} %margins
+\usepackage{fancyhdr} % header/footer
+\usepackage{lastpage} %last page (for footer)
 \pagestyle{fancy}
-\lhead{Quang-Thanh TRAN--- Curriculum Vitae}
-\chead{}
-\rhead{\thepage\ of \pageref*{LastPage}}
-\lfoot{}
-\cfoot{}
-\rfoot{Updated: \today }
-\renewcommand{\headrulewidth}{0.4pt}
-%\renewcommand{\footrulewidth}{0.4pt}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\thepage/\pageref{LastPage}}
 
-%Bib management
-\usepackage{multibib}
-\usepackage{etoolbox}
-\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+\usepackage[usenames,dvipsnames,svgnames,x11names,table]{xcolor} % color
+\newcommand{\cvcolor}{\color{DodgerBlue4}} %easier to change color consistently
+\usepackage{doi} % easy input of doi numbers
+\usepackage{enumitem} % customized lists (reset counters with the resume option)
+\usepackage{titlesec} % customized section headers
+\usepackage{titling} % customized title
+\setlength\parindent{0em} 
+\setlength{\parskip}{0.5em}
 
+%Section Header format
+\titleformat{\section}
+{\LARGE\scshape}{}{0em}{\cvcolor}[\titlerule]
+
+\titleformat{\subsection}
+{\large\scshape}{}{0em}{\cvcolor}
+
+\titleformat{\subsubsection}
+{\bfseries}{}{0em}{}
+
+%Section header spacing
+\titlespacing{\section}
+{0em}{0em}{0em}
+
+\titlespacing{\subsection}
+{0em}{0.75em}{0em}
+
+\titlespacing{\subsubsection}
+{0em}{0em}{0em}
+
+\usepackage{CJKutf8}
+
+%Title
+\renewcommand{\maketitle}{
+\begin{center}
+{\Huge\theauthor}\\
+\vspace{0.5em}
+{\Large \cvcolor{Tohoku University}}\\
+{\itshape Graduate School of Economics and Management}\\
+{\itshape 41 Kawauchi, Aoba-ku, Sendai, Miyagi, Japan 980-8576}\\
+\vspace{0.25em}
+{\color{Gray}(last update: \today)}
+\end{center}
+}
 
 \begin{document}
 
-\newcommand{\myname}{Quang-Thanh TRAN}
-\newlength{\mynamewidth}
-\settowidth{\mynamewidth}{\namefont\myname}
+\title{Curriculum Vitae} % doesn't actually show up anywhere
+\author{Quang-Thanh Tran}
 
-\name{\hspace*{0.5\textwidth}\hspace{-0.5\mynamewidth} \myname \vspace*{.1in}}
-% On the first page, have no header.
-\thispagestyle{empty}
+\maketitle
 
-\begin{resume}
 
-\input{contact.tex}
+\section{Personal Info}
+\textbf{Citizenship}: Vietnamese \\
+\textbf{Email}: tran.quang.thanh.p1@dc.tohoku.ac.jp \\
+\textbf{ORCID}: \href{https://orcid.org/0000-0002-0308-1278}{0000-0002-0308-1278}\\
+\textbf{Website}: \href{https://thanhqtran.github.io}{thanhqtran.github.io} \\
+\textbf{Japanese pronunciation}: \begin{CJK*}{UTF8}{min} クアンタイン　トラン　\end{CJK*}
 
-% \section{\sc Citizenship}
-% Vietnamese
+\section{Research Fields}
+Macroeconomics \\
+Labor Economics
 
-\section{\sc Education}
-{\bf Ph.D. Candidate}, Economics (GPEM), {\bf Tohoku University}, Japan \hfill {\bf as of \the\month/\the\year{} }\\
-\vspace*{-.1in}
+\section{Education}
+
+\textbf{PhD, Economics}\hfill\emph{March, 2025 (expected)}\\
+Tohoku University, Japan \\
+\textbf{Dissertation:} Three Essays on Fertility and Economic Growth (defensed on January 17, 2025) \\
+\textbf{Academic Advisor:} Akiomi Kitagawa
+
+
+\textbf{MA, Economics}\hfill\emph{September, 2021}\\
+Tohoku University, Japan
+
+\textbf{BA, Economics}\hfill\emph{March, 2019}\\
+Foreign Trade University, Vietnam
+
+
+\section{Grants \& Awards}
+
+\textbf{JSPS Grants-in-Aid Research Fellowship for Young Scientists (DC2)}\hfill \emph{April 2023 -- March 2025}\\
+Grant Number: 23KJ0135
+
+\textbf{JST Pioneering Research Initiated by the Next Generation Program}\hfill \emph{October 2021 -- March 2023}\\
+Grant Number: JPMJSP2114
+
+\textbf{MEXT Honor Scholarship}\hfill \emph{April 2021 -- September 2021}
+
+\textbf{Japanese Government's JASSO Scholarship}\hfill \emph{October 2019 -- March 2020}
+
+\textbf{Best Paper Award}, The 18th Mirai Creation Prize \hfill \emph{April 2023}\\
+Tohoku University
+
+\textbf{Encouragement Scholarship for Outstanding Academic Results} \hfill \emph{August 2017}\\
+Foreign Trade University
+
+\section{Teaching}
+
+\subsection{Lead Instructor}
+Graduate Student Organization's Intensive Bootcamps. URL: \href{https://github.com/thanhqtran/tohoku_bootcamp}{github.com/thanhqtran/tohoku\_bootcamp}.
 \begin{itemize}
-	\item[ ] Dissertation: Three Essays on Fertility and Economic Growth
-	\item[ ] Advisor: Prof.\ Akiomi KITAGAWA
-	\item[ ] Expected graduation date: March 2025.
+	\item[ ] Computational Macroeconomics  (English, 20 hours in total) \hfill {\bf September 2 -- 6, 2024}
+	\item[ ] Special Topics in Macroeconomics (English, 20 hours in total) \hfill {\bf March 4 -- 8, 2024}
+	\item[ ] Mathematics II (English, 30 hours in total)  \hfill {\bf August 28 -- September 15, 2023}
+	\item[ ] Mathematics I  (English, 45 hours in total)  \hfill {\bf March 6 -- 24, 2023}
 \end{itemize}
 
-{\bf M.Sc.}, Economics (GPEM), {\bf Tohoku University}, Japan \hfill {\bf 09/2021}\\
-\vspace*{-.1in}
+\subsection{Teaching Assistant}
 \begin{itemize}
-	\item[ ] Thesis Advisor: Prof.\ Jiro AKITA
+	\item[ ] Microeconomics II. Professor: Dai Zusai \hfill {\bf Fall 2021}
+	\item[ ] Microeconomics I. Professor: Dai Zusai \hfill {\bf Spring 2021}
+	\item[ ] Computational Modeling and Simulation in Games. Professor: Dai Zusai \hfill {\bf Spring 2021}
+	\item[ ] Formal Mathematics and Economic Modeling. Professor: Dai Zusai \hfill {\bf Spring 2022}
+	\item[ ] Advanced Macroeconomics (Japanese). Professor: Michio Suzuki \hfill {\bf Fall 2022}
+	\item[ ] Undergraduate Macroeconomics (Japanese). Professor: Akiomi Kitagawa \hfill {\bf Fall 2022}
 \end{itemize}
 
-{\bf B.S.}, International Economics, {\bf Foreign Trade University}, Vietnam \hfill {\bf 03/2019}\\
 
-\vspace*{4mm}
+\section{Research}
 
-\section{\sc Research Interests}
-	Macroeconomics, Public Economics
+\subsection{Publications}
 
-\vspace{4mm}
+\begin{enumerate}[label={[\arabic*]}]
 
-\section{\sc Grants, Scholarship}
-JSPS Grants-in-Aid Research Fellowship for Young Scientists, {\bf JSPS} \hfill {\bf 04/2023 -- 03/2025}\\
-Grant Number: 23KJ0135 \\
-Pioneering Research Initiated by the Next Generation Program, {\bf JST} \hfill {\bf 10/2021 -- 03/2023}\\
-MEXT Honor Scholarship, {\bf MEXT} \hfill {\bf 04/2021 -- 09/2021}\\
-Japanese Government's JASSO Scholarship, {\bf JASSO} \hfill {\bf 10/2019 -- 03/2020}\\
+\item \textbf{Tran, Q.T.} 2022. The aging tax on potential growth in Asia. \textit{Journal of Asian Economics}. 81, 101495 \doi{10.1016/j.asieco.2022.101495}
+\end{enumerate}
 
-\vspace{4mm}
+\subsection{Working Papers}
 
-\section{\sc Academic Experience}
-{\bf Teaching Assistant}, Tohoku University
-\begin{itemize}
-\item[ ] Microeconomics II. Professor: Dai Zusai \hfill {\bf Fall 2021}
-\item[ ] Microeconomics I. Professor: Dai Zusai \hfill {\bf Spring 2021}
-\item[ ] Computational Modeling and Simulation in Games. Professor: Dai Zusai \hfill {\bf Spring 2021}
-\item[ ] Formal Mathematics and Economic Modeling. Professor: Dai Zusai \hfill {\bf Spring 2022}
-\item[ ] Advanced Macroeconomics (Japanese). Professor: Michio Suzuki \hfill {\bf Fall 2022}
-\item[ ] Undergraduate Macroeconomics (Japanese). Professor: Akiomi Kitagawa \hfill {\bf Fall 2022}
-\end{itemize}
+%\begin{enumerate}[resume*] %notice the resume* option; counter and format continue
+\begin{enumerate}[label={[\arabic*]}]
 
-{\bf Instructor \& Lead Organizer}, Graduate Student Organization's Intensive Bootcamps. \\
-Bootcamp's URL: \url{https://github.com/thanhqtran/tohoku_bootcamp}.
-\begin{itemize}
-\item[ ] Mathematics I.  \hfill {\bf 03/06 -- 03/24, 2023}
-\item[ ] Mathematics II. \hfill {\bf 08/28 -- 09/15, 2023}
-\item[ ] Special Topics in Macroeconomics. \hfill {\bf 03/04 -- 03/08, 2024}
-\item[ ] Computational Macroeconomics. \hfill {\bf 09/02 -- 09/06, 2024}
-\end{itemize}
+\item Fertility and Career Choices in an Overlapping Generations Model with Sandwich Caregivers. (\textbf{Revise and Resubmit})
 
-\vspace*{.05in}
-{\bf Trainee}, IMF Regional Office for Asia and the Pacific, Tokyo
-\vspace*{.05in}
-\begin{itemize}
-\item[ ] Macroeconomist Training Program. \href{https://www.imf.org/en/Countries/ResRep/OAP-Home/~/link.aspx?_id=C2F64E8412B64A86BD37DDEB8439312B&_z=z}{Article link} \hfill {\bf 01/09 -- 01/10, 2020}
-\end{itemize}
+\item The Explosive Growth and Rapid Contraction of an Overlapping-Generations Economy. \href{https://www.dropbox.com/scl/fi/a7b1vnmypehibjmd2wim4/main_rapidcontraction.pdf?rlkey=t3aoep2iiy7shjmpq9cp6tuz3&st=b5jwqdqg&dl=0}{(PDF)}
 
-\vspace{4mm}
+\item Dual Caregiving and Survival of the Economy. \href{https://www.dropbox.com/scl/fi/s00pcg0017vtyeb364hlc/main_dualcare-copy.pdf?rlkey=koecpcdaoeroijigjm5x4dtzv&st=6rnfdie5&dl=0}{(PDF)}
+
+\item Fertility and R\&D-based Growth: The Role of Higher Education. \href{https://www.dropbox.com/scl/fi/6bkvc2vxrbst1iwocxwdl/main_overedu.pdf?rlkey=v59fcybxfcd105y2ciassjttn&st=ym5ntxq0&dl=0}{(PDF)}
+
+\end{enumerate}
+
+\subsection{Work in Progress}
+
+\begin{enumerate}[resume*] 
+
+\item The Impact of Air Pollution on Child Growth in Myanmar: Insights from the 2015-2016 DHS and Satellite Data (\textit{with Sophia Lay, Akira Hibiki}).
+
+\end{enumerate}
 
 
-%\newpage
 
+\section{Presentations}
 
-\input{publication.tex}
+\begin{enumerate}[label={[\arabic*]}]
+\item Joint workshop TU Research Center for Policy Design and Sophia Institute for Human Security, Tohoku University, March 2024
+\item The 18th Macroeconomics Conference for Young Economists, Kyoto University, February 2024
+\item Japanese Economic Association Fall Meeting, Kansai University, September 2023
+\item The 14th Vietnam Economist Annual Meeting, University of Da Nang, July 2023
+\item ISER Seminar Series, ISER, Osaka University, June 2023
+\item The RCPD Research Seminar on Contemporary Economics, Tohoku University, September 2022
+\item Japanese Economic Association Spring Meeting, Yokohama University, May 2022
+\end{enumerate}
 
-\input{conference.tex}
+%\section{Service}
+%
+%\subsection{Reviewing}
+%
+%\subsubsection{Journals}
+%
+%\emph{Journal of Ok papers} (2013)
+%
+%\subsubsection{Conferences}
+%
+%\emph{ABC16} (2017)
 
-\section{\sc Skills}
-{\bf Languages ---}
-\vspace*{.05in}
-Vietnamese (native), English (C1), Japanese (JLPT N1)\\
-{\bf Programming ---}
-\vspace*{.05in}
+\section{Technical Skills}
+
 Python, R, Julia, MATLAB.
 
-\vspace{4mm}
+\section{Languages}
 
-\section{\sc Membership}
- Japanese Economic Association \\
-
-\section{\sc Honors and Awards}
-\begin{itemize}
-\item[] Best Paper, The 18th Mirai Creation Prize, Tohoku University \hfill 04/2023
-\item[] Encouragement Scholarship for Outstanding Academic Results, FTU \hfill 08/2017
-\end{itemize}
-
-\section{\sc Other Activities}
-\begin{itemize}
-\item[] \href{https://inseikaitohoku.org/}{Tohoku Graduate Student Association}. President.  \hfill 02/2022 -- 09/2023
-\item[] Vietnamese Student Association at Tohoku University. President.  \hfill 10/2021 -- 09/2023
-\item[] Tohoku University's Student Council (Appointed Member). \hfill 04/2023 -- 03/2024
-\end{itemize}
-
+\textbf{Vietnamese} (native), \textbf{English} (fluent), \textbf{Japanese} (advanced, JLPT N1).
 
 \section{\sc References}
-\vspace*{.05in}
-\parbox{\textwidth}{
-{\bf KITAGAWA Akiomi,} Professor of Macroeconomics, Tohoku University \\
-41 Kawauchi, Aoba-ku, Sendai, Miyagi \\
-Japan 980-8576 \\
-Email: \href{mailto:akiomi.kitagawa.a4@tohoku.ac.jp}{akiomi.kitagawa.a4@tohoku.ac.jp}} \\
 
-\par
-\parbox{\textwidth}{
-{\bf AKITA Jiro,} Professor Emeritus of International Finance, Tohoku University\\
-41 Kawauchi, Aoba-ku, Sendai, Miyagi \\
-Japan 980-8576 \\
-Email: \href{mailto:jiro.akita.b3@tohoku.ac.jp}{jiro.akita.b3@tohoku.ac.jp}}
+	{\bf Akiomi Kitagawa}\\ 
+	Tohoku University \\
+	Email: \href{mailto:akiomi.kitagawa.a4@tohoku.ac.jp}{akiomi.kitagawa.a4@tohoku.ac.jp}
 
-\par
-\parbox{\textwidth}{
-{\bf BAI Yu,} Assistant Professor of Labor Economics, Tohoku University\\
-41 Kawauchi, Aoba-ku, Sendai, Miyagi \\
-Japan 980-8576 \\
-Email: \href{mailto:bai.yu.c2tohoku.ac.jp}{bai.yu.c2@tohoku.ac.jp}}
+	\vspace{0.5em}
+
+	{\bf Akira Hibiki} \\
+	Tohoku University\\
+	Email: \href{mailto:akira.hibiki.a6@tohoku.ac.jp}{akira.hibiki.a6@tohoku.ac.jp}
+
+	\vspace{0.5em}
+
+	{\bf Yu Bai} \\ 
+	Tohoku University\\
+	Email: \href{mailto:bai.yu.c2tohoku.ac.jp}{bai.yu.c2@tohoku.ac.jp}
 
 
-\end{resume}
 \end{document}
 
 % Local Variables:
