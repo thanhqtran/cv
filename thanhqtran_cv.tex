@@ -6,7 +6,7 @@
 % Source: https://github.com/ptsgmartins/cv-LaTeX-template
 
 \documentclass[12pt]{article}
-\usepackage{fontenc}
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{libertine} %font
 \usepackage[margin=2cm]{geometry} %margins
@@ -18,24 +18,22 @@
 \renewcommand{\headrulewidth}{0pt}
 \fancyfoot[R]{\thepage/\pageref{LastPage}}
 
-\usepackage[usenames,dvipsnames,svgnames,x11names,table]{xcolor} % color
+\usepackage[dvipsnames,svgnames,x11names,table]{xcolor} % color
 \newcommand{\cvcolor}{\color{DodgerBlue4}} %easier to change color consistently
 \usepackage{doi} % easy input of doi numbers
 \usepackage{enumitem} % customized lists (reset counters with the resume option)
 \usepackage{titlesec} % customized section headers
 \usepackage{titling} % customized title
-\setlength\parindent{0em} 
+\setlength\parindent{0em}
 \setlength{\parskip}{0.5em}
 
 \usepackage{hyperref}
 \hypersetup{
-    colorlinks=true,            
+    colorlinks=true,
     linkcolor={red!50!black},
     citecolor={blue!50!black},
-    urlcolor={blue!80!black},
-    hyperfootnotes=true
+    urlcolor={blue!80!black}
 }
-
 
 %Section Header format
 \titleformat{\section}
@@ -49,15 +47,18 @@
 
 %Section header spacing
 \titlespacing{\section}
-{0em}{0em}{0em}
+{0em}{0.5em}{0.3em}
 
 \titlespacing{\subsection}
 {0em}{0.75em}{0em}
 
 \titlespacing{\subsubsection}
-{0em}{0em}{0em}
+{0em}{0.25em}{0em}
 
-\usepackage{CJKutf8}
+\setlist[itemize]{leftmargin=1.2em, itemsep=0.1em}
+
+\title{Curriculum Vitae} % doesn't actually show up anywhere
+\author{Quang-Thanh Tran}
 
 %Title
 \renewcommand{\maketitle}{
@@ -65,54 +66,50 @@
 {\Huge\theauthor}\\
 \vspace{0.5em}
 {\Large \cvcolor{Curriculum Vitae}}\\
-%{\itshape Graduate School of Economics and Management}\\
-%{\itshape 41 Kawauchi, Aoba-ku, Sendai, Miyagi, Japan 980-8576}\\
-%\vspace{0.25em}
 {\color{Gray}(last update: \today)}
 \end{center}
 }
 
-\begin{document}
 
-\title{Curriculum Vitae} % doesn't actually show up anywhere
-\author{Quang-Thanh Tran}
+\begin{document}
+\sloppy
+
+
 
 \maketitle
 
 
-\section{Personal Info}
+\section{Personal Information}
 \textbf{Citizenship}: Vietnamese \\
-\textbf{Email}: quangthanhtran.econ@gmail.com \\
+\textbf{Email}: \href{mailto:quangthanhtran.econ@gmail.com}{quangthanhtran.econ@gmail.com} \\
 \textbf{Tel}: (+84)-0911-055-240 \\
-\textbf{ORCID}: \href{https://orcid.org/0000-0002-0308-1278}{0000-0002-0308-1278}\\
-\textbf{Google Scholar}: \href{https://scholar.google.com/citations?user=rWZJIlwAAAAJ&hl=en}{user=rWZJIlwAAAAJ}\\
-\textbf{Website}: \href{https://thanhqtran.github.io}{thanhqtran.github.io} \\
-%\textbf{Japanese pronunciation}: \begin{CJK*}{UTF8}{min} クアンタイン　トラン　\end{CJK*}
+\textbf{ORCID}: \href{https://orcid.org/0000-0002-0308-1278}{0000-0002-0308-1278} \\
+\textbf{Google Scholar}: \href{https://scholar.google.com/citations?user=rWZJIlwAAAAJ&hl=en}{user=rWZJIlwAAAAJ} \\
+\textbf{Website}: \href{https://thanhqtran.github.io}{thanhqtran.github.io}
 
 %==========================================
-%========= BIO ============================
+%========= RESEARCH FIELDS ================
 %==========================================
 
 \section{Research Fields}
 Macroeconomics, Economic Growth, Demography, Public Economics
 
 %==========================================
-%========= Employment ======================
+%========= EMPLOYMENT =====================
 %==========================================
-
 
 \section{Employment}
 
-\textbf{JSPS Postdoctoral Researcher}, Tohoku University \hfill \emph{2026/10 -- 2028/09} \\
+\textbf{JSPS Postdoctoral Researcher}, Tohoku University \hfill \emph{2026/11 -- 2028/09}
 
-\textbf{Visiting Fellow}, Research Center for Policy Design, Tohoku University \hfill \emph{2025/08 -- 2027/03} \\
-\noindent \textbf{Email:} \texttt{tran.quang.thanh.a7@tohoku.ac.jp}
+%\textbf{Visiting Fellow}, Research Center for Policy Design, Tohoku University \hfill \emph{2025/08 -- 2027/03} \\
+%Email: \texttt{tran.quang.thanh.a7@tohoku.ac.jp}
 
-\textbf{Research Fellow}, Development and Policies Research Center (DEPOCEN), Hanoi \hfill \emph{2025/07 -- current} \\
-\noindent \textbf{Email:} \texttt{tran.quangthanh@depocen.org}
+\textbf{Senior Research Fellow}, Development and Policies Research Center (DEPOCEN) %, Hanoi
+ \hfill \emph{2025/07 -- present} %\\
+%Email: \texttt{tran.quangthanh@depocen.org}
 
-\textbf{Research Fellow (DC2)}, Japan Society for the Promotion of Science, Japan \hfill \emph{2023/04 -- 2025/03} \\
-%\(\triangleright\) \textit{Conducted doctoral research on demography and overlapping generations models.}
+\textbf{Research Fellow (DC2)}, Japan Society for the Promotion of Science \hfill \emph{2023/04 -- 2025/03}
 
 %==========================================
 %========= EDUCATION ======================
@@ -120,51 +117,41 @@ Macroeconomics, Economic Growth, Demography, Public Economics
 
 \section{Education}
 
-\textbf{PhD, Economics}\hfill\emph{March, 2025}\\
-Tohoku University, Japan \\
-%\textbf{Dissertation:} Three Essays on Fertility and Economic Growth \href{https://tohoku.repo.nii.ac.jp/record/2003894/files/250325-TRAN-221-1.pdf}{(PDF)}\\
-\textbf{Academic Advisor:} Akiomi Kitagawa \\
-\textbf{Referees:} Jiro Akita, So Kubota
+\textbf{PhD, Economics}, Tohoku University, Japan \hfill \emph{March 2025} %\\
+%Advisor: Akiomi Kitagawa. Dissertation referees: Jiro Akita, So Kubota.
 
+\textbf{MA, Economics}, Tohoku University, Japan \hfill \emph{September 2021}
 
-\textbf{MA, Economics}\hfill\emph{September, 2021}\\
-Tohoku University, Japan
-
-\textbf{BA, International Economics}\hfill\emph{March, 2019}\\
-Foreign Trade University (FTU), Vietnam
+\textbf{BA, International Economics}, Foreign Trade University (FTU), Vietnam \hfill \emph{March 2019}
 
 %==========================================
-%========= RESEARCH ACHIEVEMENTS ==========
+%========= RESEARCH =======================
 %==========================================
-\clearpage
+
 \section{Research}
 
 \subsection{Peer-Reviewed Publications}
 
 \begin{enumerate}[label={[\arabic*]}]
+\item \textbf{Tran, Q.T.} (2025). Fertility and Career Choices in an Overlapping Generations Model with Sandwich Caregivers. \textit{Economic Modelling}, 107262. \doi{10.1016/j.econmod.2025.107262}
+\item \textbf{Tran, Q.T.} (2022). The Aging Tax on Potential Growth in Asia. \textit{Journal of Asian Economics}, 81, 101495. \doi{10.1016/j.asieco.2022.101495}
+\end{enumerate}
 
-\item \textbf{Tran, Q.T.} 2025. Fertility and Career Choices in an Overlapping Generations Model with Sandwich Caregivers. \textit{Economic Modelling}. 107262. \doi{10.1016/j.econmod.2025.107262}
-
-\item \textbf{Tran, Q.T.} 2022. The Aging Tax on Potential Growth in Asia. \textit{Journal of Asian Economics}. 81, 101495. \doi{10.1016/j.asieco.2022.101495}
+\subsection{Working Papers}
+\begin{enumerate}[label={[\arabic*]}]
+\item The Explosive Growth and Rapid Contraction of an Overlapping-Generations Economy (R\&R). \href{https://ideas.repec.org/p/toh/tupdaa/81.html}{Working Paper}
+\item Dual Caregiving, Declining Birth Rate, and Economic Stability (under review), \textit{with} \href{https://researchmap.jp/read0118970?lang=en}{Akiomi Kitagawa}. \href{https://ideas.repec.org/p/toh/tupdaa/77.html}{Working Paper}
+\item Fertility When Consumption Takes Time (under review). \href{https://app.box.com/s/jpworfeud1uanlgcjjpja2jey9h9m0ds}{PDF}
+\item Rational Addiction, Cigarette Consumption and Quitting Behaviors (under review), \textit{with} \href{https://vytuongphan.github.io/}{Tuong-Vy Phan} and \href{https://sites.google.com/depocen.org/anhnguyen}{Anh Ngoc Nguyen}. \href{https://depocenwp.org/modules/publications/watch.php?id=208}{PDF}
+\item Challenges and Strategies for Viet Nam in Escaping the Middle-Income Trap (under review), \textit{with} Duc-Thinh Bui, Minh-Chau Pham, and Anh Ngoc Nguyen. \href{https://depocenwp.org/modules/publications/watch.php?id=206}{PDF}
+\item Mission Impossible? Challenges for Countries Escaping the Middle-Income Trap, \textit{with} \href{https://sites.google.com/view/quocthaile/homepage/research?authuser=0}{Quoc Thai Le}. \href{https://www2.econ.tohoku.ac.jp/~PDesign/6011.html}{PDF}
 \end{enumerate}
 
 \subsection{Work in Progress}
-
-\subsubsection{With PDF}
-\begin{enumerate}[label={[\arabic*]}]
-\item The Explosive Growth and Rapid Contraction of an Overlapping-Generations Economy (R\&R). \href{https://ideas.repec.org/p/toh/tupdaa/81.html}{Working Paper}
-\item Dual Caregiving, Declining Birth Rate, and Economic Stability (Under Review), \textit{with} \href{https://researchmap.jp/read0118970?lang=en}{Akiomi Kitagawa}. \href{https://ideas.repec.org/p/toh/tupdaa/77.html}{Working Paper}
-\item Fertility When Consumption Takes Time (Under Review). \href{https://app.box.com/s/jpworfeud1uanlgcjjpja2jey9h9m0ds}{PDF}
-\item Mission Impossible? Challenges for Countries Escaping the Middle-Income Trap, \textit{with} \href{https://sites.google.com/view/quocthaile/homepage/research?authuser=0}{Quoc Thai Le}. \href{https://www2.econ.tohoku.ac.jp/~PDesign/6011.html}{PDF}
-\item Rational Addiction, Cigarette Consumption and Quitting Behaviors (Under Review), \textit{with} \href{https://vytuongphan.github.io/}{Tuong-Vy Phan} and \href{https://sites.google.com/depocen.org/anhnguyen}{Anh Ngoc Nguyen}. \href{https://depocenwp.org/modules/publications/watch.php?id=208}{PDF}
-\item Challenges and Strategies for Viet Nam in Escaping the Middle-Income Trap (Under Review), \textit{with} Duc-Thinh Bui, Minh-Chau Pham, and Anh Ngoc Nguyen. \href{https://depocenwp.org/modules/publications/watch.php?id=206}{PDF}
-\end{enumerate}
-
-\subsubsection{Draft Coming Soon}
 \begin{enumerate}[label={[\arabic*]}]
 \item Fiscal Implications of Aging and Informality in Emerging Asia, \textit{with} Wannaphong Durongkavero and Adilah Abdul Ghapor.
 \item Accounting for Productivity Growth in an Open Economy: Evidence from Vietnam.
-\item Endogenous Technology Choice and Green Transition, \textit{with} \href{https://economix.fr/en/membre/pham-thi-kim-cuong}{Thi-Kim-Cuong Pham}.
+\item Endogenous Technology Choice and Green Transition, \textit{with} \href{https://economix.fr/en/membre/pham-thi-kim-cuong}{Thi Kim Cuong Pham}.
 \item Political Selection and the Development Trap, \textit{with} \href{https://sites.google.com/view/quocthaile/homepage/research?authuser=0}{Quoc Thai Le}.
 \item Longevity, Retirement, and Filial Transfers in an Aging Economy, \textit{with} \href{https://sites.google.com/view/vanquy93/}{Van-Quy Nguyen}.
 \item Wariness and the Timing of Births, \textit{with} \href{https://sites.google.com/view/vanquy93/}{Van-Quy Nguyen}.
@@ -173,45 +160,47 @@ Foreign Trade University (FTU), Vietnam
 \item Foreign Direct Investment, Risk Premium and the Business Cycle in Small Open Emerging Economies.
 \end{enumerate}
 
-\subsection{Policy Briefs}
+\subsection{Policy Reports}
 \begin{enumerate}[label={[\arabic*]}]
-\item Viet Nam Quarterly Macroeconomic Report 2026Q3. \href{https://depocenwp.org/modules/reports/view.php?id=1}{PDF}
-\item Vietnam's Annual Macroeconomic Review 2025. \href{https://depocenwp.org/modules/reports/view.php?id=2}{PDF}. \href{https://data.mendeley.com/datasets/r9g78zx8vc/2}{Data}
+\item Viet Nam Quarterly Macroeconomic Report 2026Q3. DEPOCEN. \href{https://depocenwp.org/modules/reports/view.php?id=1}{PDF}
+\item Vietnam's Annual Macroeconomic Review 2025. DEPOCEN. \href{https://depocenwp.org/modules/reports/view.php?id=2}{PDF}, \href{https://data.mendeley.com/datasets/r9g78zx8vc/2}{Data}
 \end{enumerate}
-
+%\textit{Contributions to reports not publicly available} (as DEPOCEN researcher): Asian Development Bank Institute (ADBI), quality growth in Southeast Asia; GIZ, labor supply during Vietnam's energy transition; World Bank, effectiveness of digital app adoption in addressing public issues.
 
 %==========================================
 %========= GRANTS =========================
 %==========================================
 
-\section{Grants}
+\section{Grants and Fellowships}
 
-\textbf{JSPS Postdoctoral Fellowships for Research in Japan} \hfill \emph{October 2026 -- September 2028}\\
+\textbf{JSPS Postdoctoral Fellowship for Research in Japan} \hfill \emph{2026/10 -- 2028/09}
 
-\textbf{NAFOSTED Grants for Research in Applied Social Science} \hfill \emph{September 2025 -- August 2028}\\
-Grant Number: NCUD.09-2025.29 \\
+\textbf{NAFOSTED Grant for Research in Applied Social Science} \hfill \emph{2025/09 -- 2028/08} \\
+Grant number: NCUD.09-2025.29 \\
 Title: Hybrid Micro-DSGE Model: Applications and Policy Implications for Vietnam
 
-\textbf{JSPS Grants-in-Aid Research Fellowship for Young Scientists (DC2)}\hfill \emph{April 2023 -- March 2025}\\
-Grant Number: 23KJ0135 \\
+\textbf{JSPS Grant-in-Aid for JSPS Fellows (DC2)} \hfill \emph{2023/04 -- 2025/03} \\
+Grant number: 23KJ0135 \\
 Title: Automation and Skill Premium: Why Fertility and Employment Protection Matter
 
+\textbf{JST Pioneering Research Initiated by the Next Generation Program} \hfill \emph{2021/10 -- 2023/03} \\
+Grant number: JPMJSP2114
 
-\textbf{JST Pioneering Research Initiated by the Next Generation Program}\hfill \emph{October 2021 -- March 2023}\\
-Grant Number: JPMJSP2114
+\textbf{MEXT Honors Scholarship for Privately Financed International Students} \hfill \emph{2021/04 -- 2021/09}
 
-\textbf{MEXT Honor Scholarship}\hfill \emph{April 2021 -- September 2021}
+\textbf{JASSO Scholarship}, Japan Student Services Organization \hfill \emph{2019/10 -- 2020/03}
 
-\textbf{Japanese Government's JASSO Scholarship}\hfill \emph{October 2019 -- March 2020}
+%==========================================
+%========= AWARDS =========================
+%==========================================
 
 \section{Awards}
 
-\textbf{Best Paper Award}, Vietnamese Economist Annual Meeting 2025 \hfill \emph{December 2025}
+\textbf{Best Paper Award}, 16th Vietnam Economists Annual Meeting (VEAM) \hfill \emph{December 2025}
 
-\textbf{Best Paper Award}, The 18th Mirai Creation Prize, Tohoku University \hfill \emph{April 2023}
+\textbf{Best Paper Award}, 18th Mirai Creation Prize, Tohoku University \hfill \emph{April 2023}
 
 \textbf{Encouragement Scholarship for Outstanding Academic Results}, FTU \hfill \emph{August 2017}
-
 
 %==========================================
 %========= TEACHING =======================
@@ -221,29 +210,29 @@ Grant Number: JPMJSP2114
 
 \subsection{Lecturer}
 \begin{itemize}
-	\item[ ] Advanced Macroeconomics. Center for Advanced Studies in Economics and Data Science (CASED). Spring 2026.
-	\item[ ] Application of QPM in economic forecasting. Vietcombank. March, 2026.
-	\item[ ] Optimization. National Economics University. Spring 2025. Spring 2026.
+\item[] Advanced Macroeconomics, Center for Advanced Studies in Economics and Data Science (CASED) \hfill Spring 2026
+\item[] Application of QPM in Economic Forecasting, Vietcombank \hfill March 2026
+\item[] Optimization, National Economics University \hfill Spring 2025, Spring 2026
 \end{itemize}
 
-\subsection{Bootcamp}
-Graduate Student Organization's Intensive Bootcamps. URL: \href{https://github.com/thanhqtran/tohoku_bootcamp}{github.com/thanhqtran/tohoku\_bootcamp}.
+\subsection{Graduate Bootcamps}
+Intensive bootcamps of the Tohoku University Graduate Student Association (in English). Materials: \href{https://github.com/thanhqtran/tohoku_bootcamp}{github.com/thanhqtran/tohoku\_bootcamp}.
 \begin{itemize}
-	\item[ ] Computational Macroeconomics (English, 20 hours in total) \hfill {\bf March 19 -- 26, 2024}
-	\item[ ] Computational Macroeconomics  (English, 20 hours in total) \hfill {\bf September 2 -- 6, 2024}
-	\item[ ] Special Topics in Macroeconomics (English, 20 hours in total) \hfill {\bf March 4 -- 8, 2024}
-	\item[ ] Mathematics II (English, 30 hours in total)  \hfill {\bf August 28 -- September 15, 2023}
-	\item[ ] Mathematics I  (English, 45 hours in total)  \hfill {\bf March 6 -- 24, 2023}
+\item[] Computational Macroeconomics (20 hours) \hfill September 2--6, 2024
+\item[] Computational Macroeconomics (20 hours) \hfill March 19--26, 2024
+\item[] Special Topics in Macroeconomics (20 hours) \hfill March 4--8, 2024
+\item[] Mathematics II (30 hours) \hfill August 28 -- September 15, 2023
+\item[] Mathematics I (45 hours) \hfill March 6--24, 2023
 \end{itemize}
 
-\subsection{Teaching Assistant}
+\subsection{Teaching Assistant (Tohoku University)}
 \begin{itemize}
-	\item[ ] Undergraduate Macroeconomics (Japanese). Professor: Akiomi Kitagawa \hfill {\bf Fall 2022}
- 	\item[ ] Advanced Macroeconomics (Japanese). Professor: Michio Suzuki \hfill {\bf Fall 2022}
-  	\item[ ] Formal Mathematics and Economic Modeling. Professor: Dai Zusai \hfill {\bf Spring 2022}
-   	\item[ ] Computational Modeling and Simulation in Games. Professor: Dai Zusai \hfill {\bf Spring 2021}
-    	\item[ ] Microeconomics I. Professor: Dai Zusai \hfill {\bf Spring 2021}
-     	\item[ ] Microeconomics II. Professor: Dai Zusai \hfill {\bf Fall 2021}
+\item[] Undergraduate Macroeconomics (in Japanese). Professor: Akiomi Kitagawa \hfill Fall 2022
+\item[] Advanced Macroeconomics (in Japanese). Professor: Michio Suzuki \hfill Fall 2022
+\item[] Formal Mathematics and Economic Modeling. Professor: Dai Zusai \hfill Spring 2022
+\item[] Microeconomics II. Professor: Dai Zusai \hfill Fall 2021
+\item[] Computational Modeling and Simulation in Games. Professor: Dai Zusai \hfill Spring 2021
+\item[] Microeconomics I. Professor: Dai Zusai \hfill Spring 2021
 \end{itemize}
 
 %==========================================
@@ -252,116 +241,98 @@ Graduate Student Organization's Intensive Bootcamps. URL: \href{https://github.c
 
 \section{Conferences and Presentations}
 
-\subsection{Upcoming (2027)}
-TBA.
-
-\subsection{Past Presentations}
-
-\noindent
-Japanese Economic Association Spring Meeting (May 29, 2022, Yokohama);
-The 1st RCPD Research Seminar on Contemporary Economics (Tohoku University, 2022);
-ISER Seminar Series (Osaka University, 2023);
-The 14th Vietnam Economist Annual Meeting (University of Da Nang, 2023);
-Japanese Economic Association Fall Meeting (Kansai University, 2023);
-The 18th Macroeconomics Conference for Young Economists (Kyoto University, 2024);
-Joint workshop TU Research Center for Policy Design and Sophia Institute for Human Security (Tohoku University, 2024);
-MFE Seminar (National Economics University, 2025/02);
-The 16th Vietnam Economist Annual Meeting (TUEBA, December 9--10, 2025);
-ISEAS--ADBI Joint Seminar: Shaping Southeast Asia's Future Prosperity with Quality Growth (ISEAS Yusof Ishak Institute, Singapore, May 2026);
-British Academy International Writing Workshop (SWU Bangkok, May 2026);
-\href{https://veam.org/}{17th Vietnam Economists Annual Meeting} (Hue, July 2026);
-\href{https://vsge2026.sciencesconf.org/index}{2026 Vietnam Symposium on Global Economy} (HCMC, July 2026);
-\href{https://www.iseas.edu.sg/mec-events/comparative-labour-policy-in-southeast-asia-sustaining-work-and-wellbeing-in-a-shifting-world/}{ISEAS Comparative Labour Policy in Southeast Asia: Sustaining Work and Wellbeing in a Shifting World} (October 15, 2026, Singapore).
+\begin{itemize}
+\item[] \textbf{2026:} \href{https://www.iseas.edu.sg/mec-events/comparative-labour-policy-in-southeast-asia-sustaining-work-and-wellbeing-in-a-shifting-world/}{ISEAS Comparative Labour Policy in Southeast Asia: Sustaining Work and Wellbeing in a Shifting World} (Singapore, October 15);
+\href{https://vsge2026.sciencesconf.org/index}{Vietnam Symposium on Global Economy} (Ho Chi Minh City, July);
+\href{https://veam.org/}{17th Vietnam Economists Annual Meeting} (Hue, July);
+British Academy International Writing Workshop (Srinakharinwirot University, Bangkok, May);
+ISEAS--ADBI Joint Seminar: Shaping Southeast Asia's Future Prosperity with Quality Growth (ISEAS--Yusof Ishak Institute, Singapore, May).
+\item[] \textbf{2025:} 16th Vietnam Economists Annual Meeting (TUEBA, December 9--10);
+MFE Seminar (National Economics University, February).
+\item[] \textbf{2024:} 18th Macroeconomics Conference for Young Economists (Kyoto University);
+Joint Workshop of the Tohoku University Research Center for Policy Design and the Sophia Institute for Human Security (Tohoku University).
+\item[] \textbf{2023:} Japanese Economic Association Fall Meeting (Kansai University);
+14th Vietnam Economists Annual Meeting (University of Da Nang);
+ISER Seminar Series (Osaka University).
+\item[] \textbf{2022:} Japanese Economic Association Spring Meeting (Yokohama, May 29);
+1st RCPD Research Seminar on Contemporary Economics (Tohoku University).
+\end{itemize}
 
 \section{Referee Service}
 
 Energy Economics, Economic Modelling, Applied Economics, Journal of Southeast Asian Economies, Southeast Asian Journal of Economics
 
-
 \section{Programming Skills}
 
-Python, R, Julia, MATLAB, STATA, Eviews
+Python, R, Julia, MATLAB, Stata, EViews
 
 \section{Languages}
 
 \textbf{Vietnamese} (native), \textbf{English} (fluent), \textbf{Japanese} (advanced), \textbf{French} (basic)
 
-\section{Membership}
+\section{Memberships}
 
 International Society for Vietnamese Economists, Japanese Economic Association, Asian and Australasian Society of Labour Economics
 
 \section{Other Activities and Training}
 
-\textbf{Participant}, IMFx's Monetary Policy Analysis and Forecasting. DATE of completion: October 11, 2025. \href{https://courses.edx.org/certificates/cba0e73cd51747e2ae0a105f8d9e9acc}{Certificate}.
+IMFx Monetary Policy Analysis and Forecasting (edX), completed October 11, 2025. \href{https://courses.edx.org/certificates/cba0e73cd51747e2ae0a105f8d9e9acc}{Certificate}
 
-\textbf{President}, Vietnamese Student Association at Tohoku University. April, 2023 -- April, 2024
+IMF 8th Macroeconomist Training Program, JICA Tokyo International Center, Jan 9--10, 2020. \href{https://www.imf.org/en/countries/resrep/oap-home/2020/mtp-20200109}{Press}
 
-\textbf{President}, Tohoku University Graduate Student Association. February, 2022 -- September, 2023
+\textbf{President}, Vietnamese Student Association at Tohoku University \hfill \emph{April 2023 -- April 2024}
 
-\textbf{Participant}, The IMF's 8th Macroeconomist Training Program. VENUE: JICA Tokyo (Tokyo International Center). DATE: January 9--10, 2020. \href{https://www.imf.org/en/countries/resrep/oap-home/2020/mtp-20200109}{in Press}.
+\textbf{President}, Tohoku University Graduate Student Association \hfill \emph{February 2022 -- September 2023}
 
-\section{\sc References}
+
+
+\section{References}
 
 \begin{center}
-\begin{tabular}{p{7cm} p{7cm}}
-
-% --- Row 1 ---
-\parbox[t]{7cm}{
-    {\bf \href{https://researchmap.jp/read0118970?lang=en}{Akiomi Kitagawa}} \\ 
+\begin{tabular}{p{7.5cm} p{7.5cm}}
+\parbox[t]{7.5cm}{
+    \textbf{\href{https://researchmap.jp/read0118970?lang=en}{Akiomi Kitagawa}} \\
     Professor of Macroeconomics \\
-    at Tohoku University \\
+    Tohoku University \\
     akiomi.kitagawa.a4@tohoku.ac.jp
 }
 &
-\parbox[t]{7cm}{
-    {\bf \href{https://research.manchester.ac.uk/en/persons/katsushi.imai}{Katsushi Imai}} \\ 
-    Reader in Economics 
-    at University of Manchester \\
+\parbox[t]{7.5cm}{
+    \textbf{\href{https://research.manchester.ac.uk/en/persons/katsushi.imai}{Katsushi Imai}} \\
+    Reader in Economics \\
+    University of Manchester \\
     Katsushi.Imai@manchester.ac.uk
 }
-\\[5 em]
-
-% --- Row 2 ---
-\parbox[t]{7cm}{
-    {\bf \href{https://researchmap.jp/read0006101}{Akira Hibiki}} \\ 
+\\[4.5em]
+\parbox[t]{7.5cm}{
+    \textbf{\href{https://researchmap.jp/read0006101}{Akira Hibiki}} \\
     Professor of Environmental Economics \\
-    at Tohoku University \\
+    Tohoku University \\
     akira.hibiki.a6@tohoku.ac.jp
 }
-
 &
-\parbox[t]{7cm}{
-    {\bf \href{https://sites.google.com/view/yubaiecon/}{Yu Bai}} \\ 
-    Assistant Professor of Economics \\
-    at Tohoku University \\
+\parbox[t]{7.5cm}{
+    \textbf{\href{https://sites.google.com/view/yubaiecon/}{Yu Bai}} \\
+    Associate Professor of Economics \\
+    Tohoku University \\
     bai.yu.c2@tohoku.ac.jp
 }
-\\[5 em]
-
-% --- Row 3 ---
-
-\parbox[t]{7cm}{
-    {\bf \href{https://researchmap.jp/read0006101?lang=en}{Cuong Le Van}} \\ 
-    Professor Emeritus in PSE \\
-    Research Director Emeritus at CNRS \\
+\\[4.5em]
+\parbox[t]{7.5cm}{
+    \textbf{Cuong Le Van} \\
+    Professor Emeritus, PSE \\
+    Research Director Emeritus, CNRS \\
     Cuong.Le-Van@univ-paris1.fr
 }
 &
-\parbox[t]{7cm}{
-    {\bf \href{https://en.em-normandie.com/professors-directory/thanh-tam-nguyen-huu}{Thi Kim Cuong PHAM}} \\ 
-    Professor, Department of Economics \\
-    at University of Paris Nanterre \\
+\parbox[t]{7.5cm}{
+    \textbf{\href{https://economix.fr/en/membre/pham-thi-kim-cuong}{Thi Kim Cuong Pham}} \\
+    Professor of Economics \\
+    University of Paris Nanterre \\
     pham\_tkc@parisnanterre.fr
 }
 \\
-
 \end{tabular}
 \end{center}
 
-
-
 \end{document}
-
-% Local Variables:
-% mode: latex
-% End:
